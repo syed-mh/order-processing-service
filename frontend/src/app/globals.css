@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+main,
+header {
+  width: 1440px;
+  max-width: 90%;
+  margin: 0 auto;
+}
