@@ -2,8 +2,6 @@
 
 This repository is my implementation of a hypothetical orders processing service.
 
-You may view this project live [here](https://ordersprocessingservice.vercel.app).
-
 The tech stack used for this implementation is:
 
 1. **NodeJS** Express Typescript backend
