@@ -59,3 +59,18 @@ npm run build && npm start
 ```
 
 ---
+
+## Noteworthy aspects
+
+In this project, I would like to highlight a few files in particular:
+
+### Frontend
+
+1. `frontend/utils/axios.ts` contains my implementation of the retry mechanism known as "Exponential backoff", which allows clients to retry server calls that have failed for a short period of time without overloading the client's device or the server in the process.
+2. `frontend/components/orderCard.ts` contains a number of functions that make use of react hooks for improved performance.
+
+### Backend
+
+1. `backend/seed.ts` is a file that contains the script required to pre-populate the database with randomized records that allow us to quickly move towards development and testing
+2. `backend/utils/encryptPrimaryKeys.ts` contains the code for a recursive encryption function that runs on any outgoing data models. Conversely, any incoming IDs are decrypted by `backend/utils/decryptPrimaryKeys.ts`
+3. `backend/controllers/order/createOrder.ts` and `backend/controllers/order/updateOrder.ts` both contain basic level field validation.
